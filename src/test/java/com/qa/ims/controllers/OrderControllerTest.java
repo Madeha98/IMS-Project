@@ -32,7 +32,7 @@ public class OrderControllerTest {
 	@Test
 	public void testCreate() {
 		final long customerId = (long) 4;
-		final String date = "2022/02/20";
+		final String date = "2015/03/03";
 		final Order order = new Order(customerId,date);
 
 		Mockito.when(utils.getLong()).thenReturn(customerId);
@@ -50,7 +50,7 @@ public class OrderControllerTest {
 	@Test
 	public void testReadAll() {
 		final long customerId = (long) 4;
-		final String date = "2022/04/06";
+		final String date = "2018/09/09";
 		List<Order> order = new ArrayList<>();
 		order.add(new Order(customerId, date));
 
@@ -66,7 +66,7 @@ public class OrderControllerTest {
 	@Test
 	public void testUpdate() {
 		final Long orderId = 1L, customerId = 1L;
-		final String date = "2022/05/06";
+		final String date = "2022/05/01";
 
 		final Order order = new Order(orderId, customerId, date, null);
 
@@ -85,7 +85,7 @@ public class OrderControllerTest {
 	@Test
 	public void testDelete() {
 		final long customerId = (long) 4;
-		final String orderDate = "2022/05/05";
+		final String orderDate = "2020/02/05";
 
 		Mockito.when(utils.getLong()).thenReturn(customerId);
 		Mockito.when(utils.getString()).thenReturn(orderDate);
