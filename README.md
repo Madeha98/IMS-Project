@@ -1,37 +1,42 @@
-Coverage: 34%
-# Project Title
+Coverage: 77.6%
+# IMS-Project
 
-One Paragraph of project description goes here
+This inventory management system (IMS) project encapsulates the core modules of the training, involving Agile & Project Management, Databases, Cloud Fundamentals, Programming Fundamentals. I created a Java application that interacts with a MySQL database and can be interacted with via a CLI, including CRUD functionalities
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The link to the GitHub project repository is below:
+https://github.com/Madeha98/IMS-Project
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The software used for this application can be installed by clicking the links below:
 
-```
-Give examples
-```
+
+[Java SE Development Kit](https://www.oracle.com/java/technologies/downloads/)
+
+[MySQL Workbench](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+
+[Maven](https://maven.apache.org/download.cgi)
+
+[JUnit](https://junit.org/junit5/)
+
+[GitBash](https://git-scm.com/)
+
+[Eclipse](https://eclipse.org/downloads/)
+
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+How to open the project in the Eclipse IDE:
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Once the required software has been installed, open a GitBash terminal in desired directory. Copy and paste the command below into the terminal then hit enter.
 
 ```
-until finished
+$ git clone git@github.com:Madeha98/IMS-Project.git
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
+The new folder in your working directory can be opened in Eclipse by clicking "File" and "Open Projects...".
 
 ## Running the tests
 
