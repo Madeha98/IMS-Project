@@ -88,8 +88,6 @@ We use [SemVer](http://semver.org/) for versioning.
 * **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
 * **Madeha Rawshon** - *Completed work* - [Madeha98](https://github.com/Madeha98)
 
-* **Madeha Rawshon** - *Completed work* - [Madeha98](https://github.com/cMadeha98)
-
 ## License
 
 This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md) file for details 
