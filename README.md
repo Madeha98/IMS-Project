@@ -40,34 +40,40 @@ The new folder in your working directory can be opened in Eclipse by clicking "F
 
 ## Running the tests
 
-Explain how to run the automated tests for this system. Break down into which tests and what they do
+Automated tests can be run in the Eclipse IDE. Right-click the desired file/folder, select "Coverage As" and "JUnit Test". This will begin the testing and display the outcome.
 
 ### Unit Tests 
 
-Explain what these tests test, why and how to run them
+Unit testing is a software testing method that involves analysing individual sections of an application (units). This tests a consstructor of the "Item" class.
 
 ```
-Give an example
+@Test
+	public void oneConstructor() {
+		Item = new Item(id, Name, price);
+	}
 ```
 
 ### Integration Tests 
-Explain what these tests test, why and how to run them
+Integration testing involves testing combined software modules as a group. This tests CRUD functionality of "Item" and the database connection.
 
 ```
-Give an example
+@Test
+	public void testUpdate() {
+		Item item = new Item(1L, "Jumper", (double)400.99);
+
+		Mockito.when(this.utils.getLong()).thenReturn(1L);
+		Mockito.when(this.utils.getString()).thenReturn(item.getName());
+		Mockito.when(this.utils.getDouble()).thenReturn(item.getPrice());
+		Mockito.when(this.DAO.update(item)).thenReturn(item);
+
+		assertEquals(item, this.controller.update());
+
+		Mockito.verify(this.utils, Mockito.times(1)).getLong();
+		Mockito.verify(this.utils, Mockito.times(1)).getString();
+		Mockito.verify(this.utils, Mockito.times(1)).getDouble();
+		Mockito.verify(this.DAO, Mockito.times(1)).update(item);
+	}
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -80,6 +86,7 @@ We use [SemVer](http://semver.org/) for versioning.
 ## Authors
 
 * **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
+* **Madeha Rawshon** - *Completed work* - [Madeha98](https://github.com/Madeha98)
 
 * **Madeha Rawshon** - *Completed work* - [Madeha98](https://github.com/cMadeha98)
 
@@ -91,6 +98,4 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* A thank you to my course trainers and team for the learning support for this IMS project.
